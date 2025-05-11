@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrusht Hospital - My Insurance</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/hospital-logo.png" alt="Shrusht Hospital Logo">
+            <h1>Shrusht Hospital</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Hospital Tours</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="blood-donation.html">Blood Donation</a></li>
+                <li><a href="my-insurance.html" class="active">My Insurance</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="insurance-main">
+        <section class="insurance-hero">
+            <h2>My Insurance Information</h2>
+            <p>View and manage your insurance details for seamless healthcare services</p>
+        </section>
+
+        <section class="current-insurance">
+            <h3>Current Insurance Plans</h3>
+            <div class="insurance-cards">
+                <div class="insurance-card">
+                    <div class="insurance-header">
+                        <h4>Primary Insurance</h4>
+                        <span class="status active">Active</span>
+                    </div>
+                    <div class="insurance-details">
+                        <p><strong>Provider:</strong> HealthCare Plus</p>
+                        <p><strong>Plan Name:</strong> Gold Preferred</p>
+                        <p><strong>Member ID:</strong> HC789456123</p>
+                        <p><strong>Group Number:</strong> GP556677</p>
+                        <p><strong>Effective Date:</strong> 01/01/2023 - 12/31/2023</p>
+                    </div>
+                    <button class="edit-btn">Edit Details</button>
+                </div>
+
+                <div class="insurance-card">
+                    <div class="insurance-header">
+                        <h4>Secondary Insurance</h4>
+                        <span class="status inactive">Not Active</span>
+                    </div>
+                    <div class="insurance-details">
+                        <p><strong>Provider:</strong> No secondary insurance on file</p>
+                        <button class="add-btn">Add Secondary Insurance</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-insurance-form">
+            <h3>Add/Update Insurance Information</h3>
+            <form id="insuranceForm" class="insurance-form">
+                <div class="form-group">
+                    <label for="insuranceType">Insurance Type</label>
+                    <select id="insuranceType" name="insuranceType" required>
+                        <option value="">Select Insurance Type</option>
+                        <option value="primary">Primary Insurance</option>
+                        <option value="secondary">Secondary Insurance</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="providerName">Insurance Provider</label>
+                        <input type="text" id="providerName" name="providerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="planName">Plan Name</label>
+                        <input type="text" id="planName" name="planName" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="memberId">Member ID</label>
+                        <input type="text" id="memberId" name="memberId" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="groupNumber">Group Number</label>
+                        <input type="text" id="groupNumber" name="groupNumber">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="effectiveDate">Effective Date</label>
+                        <input type="date" id="effectiveDate" name="effectiveDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expirationDate">Expiration Date</label>
+                        <input type="date" id="expirationDate" name="expirationDate" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="policyHolder">Policy Holder Name</label>
+                    <input type="text" id="policyHolder" name="policyHolder" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="policyHolderDob">Policy Holder Date of Birth</label>
+                    <input type="date" id="policyHolderDob" name="policyHolderDob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="relationship">Relationship to Policy Holder</label>
+                    <select id="relationship" name="relationship" required>
+                        <option value="">Select Relationship</option>
+                        <option value="self">Self</option>
+                        <option value="spouse">Spouse</option>
+                        <option value="child">Child</option>
+                        <option value="parent">Parent</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="insuranceConsent" name="insuranceConsent" required>
+                    <label for="insuranceConsent">I authorize Shrusht Hospital to use this insurance information for billing purposes</label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="save-btn">Save Information</button>
+                    <button type="button" class="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="insurance-benefits">
+            <h3>Coverage & Benefits</h3>
+            <div class="benefits-table">
+                <div class="table-header">
+                    <div class="header-item">Service</div>
+                    <div class="header-item">Coverage</div>
+                    <div class="header-item">Your Responsibility</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-item">Primary Care Visit</div>
+                    <div class="row-item">100% Covered</div>
+                    <div class="row-item">$0 Copay</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-item">Specialist Visit</div>
+                    <div class="row-item">80% Covered</div>
+                    <div class="row-item">$40 Copay</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-item">Emergency Room</div>
+                    <div class="row-item">70% Covered</div>
+                    <div class="row-item">$250 Copay</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-item">Hospital Stay</div>
+                    <div class="row-item">90% Covered</div>
+                    <div class="row-item">$500 Deductible</div>
+                </div>
+                <div class="table-row">
+                    <div class="row-item">Prescriptions</div>
+                    <div class="row-item">Varies by Tier</div>
+                    <div class="row-item">$10-$50 Copay</div>
+                </div>
+            </div>
+            <p class="disclaimer">* Coverage details are estimates only. Actual benefits are determined at time of service based on your specific plan.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Medical Drive, Health City</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@shrusht-hospital.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="blood-donation.html">Blood Donation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Emergency</h4>
+                <p>Emergency Number: (555) 987-6543</p>
+                <p>Available 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Shrusht Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

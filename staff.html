@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrusht Hospital - Our Staff</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="hospital-logo.png" alt="Shrusht Hospital Logo">
+            <h1>Shrusht Hospital</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Hospital Tours</a></li>
+                <li><a href="staff.html" class="active">Our Staff</a></li>
+                <li><a href="blood-donation.html">Blood Donation</a></li>
+                <li><a href="my-insurance.html">My Insurance</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="staff-main">
+        <section class="staff-hero">
+            <h2>Meet Our Expert Medical Team</h2>
+            <p>Our highly qualified staff is dedicated to providing you with the best possible care</p>
+        </section>
+
+        <section class="department-filter">
+            <h3>Filter by Department</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-department="all">All</button>
+                <button class="filter-btn" data-department="cardiology">Cardiology</button>
+                <button class="filter-btn" data-department="neurology">Neurology</button>
+                <button class="filter-btn" data-department="orthopedics">Orthopedics</button>
+                <button class="filter-btn" data-department="pediatrics">Pediatrics</button>
+                <button class="filter-btn" data-department="surgery">Surgery</button>
+            </div>
+        </section>
+
+        <section class="staff-grid">
+            <div class="staff-card" data-department="cardiology">
+                <img src="doctor1.jpeg" alt="Dr. Smith">
+                <h3>Dr. John Smith</h3>
+                <p class="specialty">Cardiologist</p>
+                <p class="bio">Board certified cardiologist with 15 years of experience in interventional cardiology.</p>
+                <p class="education">MD, Harvard Medical School</p>
+            </div>
+
+            <div class="staff-card" data-department="neurology">
+                <img src="doctor2.jpg" alt="Dr. Johnson">
+                <h3>Dr. Sarah Johnson</h3>
+                <p class="specialty">Neurologist</p>
+                <p class="bio">Specializes in treating complex neurological disorders and stroke management.</p>
+                <p class="education">MD, Johns Hopkins University</p>
+            </div>
+
+            <div class="staff-card" data-department="orthopedics">
+                <img src="doctor3.jpg" alt="Dr. Williams">
+                <h3>Dr. Michael Williams</h3>
+                <p class="specialty">Orthopedic Surgeon</p>
+                <p class="bio">Expert in joint replacements and sports medicine injuries.</p>
+                <p class="education">MD, Stanford University</p>
+            </div>
+
+            <div class="staff-card" data-department="pediatrics">
+                <img src="doctor4.png" alt="Dr. Lee">
+                <h3>Dr. Emily Lee</h3>
+                <p class="specialty">Pediatrician</p>
+                <p class="bio">Specializes in pediatric care and childhood development.</p>
+                <p class="education">MD, University of California</p>
+            </div>
+
+            <div class="staff-card" data-department="surgery">
+                <img src="doctor5.png" alt="Dr. Garcia">
+                <h3>Dr. Carlos Garcia</h3>
+                <p class="specialty">General Surgeon</p>
+                <p class="bio">Performs a wide range of general surgical procedures with minimally invasive techniques.</p>
+                <p class="education">MD, Mayo Clinic</p>
+            </div>
+
+            <div class="staff-card" data-department="cardiology">
+                <img src="doctor6.jpg" alt="Dr. Patel">
+                <h3>Dr. Priya Patel</h3>
+                <p class="specialty">Cardiologist</p>
+                <p class="bio">Specializes in electrophysiology and arrhythmia management.</p>
+                <p class="education">MD, Duke University</p>
+            </div>
+        </section>
+
+        <section class="nursing-staff">
+            <h3>Our Nursing Team</h3>
+            <p>Our dedicated nursing staff provides compassionate care 24 hours a day, 7 days a week. With specialized training in various medical fields, our nurses work closely with physicians to ensure the best possible outcomes for our patients.</p>
+            <div class="nursing-stats">
+                <div class="nursing-stat">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Registered Nurses</span>
+                </div>
+                <div class="nursing-stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Specialized Nurses</span>
+                </div>
+                <div class="nursing-stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Care Availability</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Medical Drive, Health City</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@shrusht-hospital.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="blood-donation.html">Blood Donation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Emergency</h4>
+                <p>Emergency Number: (555) 987-6543</p>
+                <p>Available 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Shrusht Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

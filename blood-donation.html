@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrusht Hospital - Blood Donation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="images/hospital-logo.png" alt="Shrusht Hospital Logo">
+            <h1>Shrusht Hospital</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="tours.html">Hospital Tours</a></li>
+                <li><a href="staff.html">Our Staff</a></li>
+                <li><a href="blood-donation.html" class="active">Blood Donation</a></li>
+                <li><a href="my-insurance.html">My Insurance</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blood-donation-main">
+        <section class="blood-donation-hero">
+            <h2>Blood Donation Center</h2>
+            <p>Your donation can save up to three lives. Join us in this life-saving mission.</p>
+        </section>
+
+        <section class="donation-info">
+            <div class="info-card">
+                <h3>Donation Hours</h3>
+                <div class="timing-details">
+                    <div class="timing-item">
+                        <h4>Weekends (Saturday & Sunday)</h4>
+                        <p>9:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="timing-item">
+                        <h4>Weekdays (Monday - Friday)</h4>
+                        <p>10:00 AM - 12:00 PM</p>
+                        <p>3:00 PM - 6:00 PM</p>
+                    </div>
+                </div>
+                <p class="note">* Last donation accepted 30 minutes before closing</p>
+            </div>
+
+            <div class="info-card">
+                <h3>Eligibility Requirements</h3>
+                <ul class="eligibility-list">
+                    <li>Age between 18-65 years</li>
+                    <li>Weight at least 50 kg (110 lbs)</li>
+                    <li>Good general health</li>
+                    <li>No infections or illnesses at time of donation</li>
+                    <li>No tattoos or piercings in last 6 months</li>
+                    <li>Not pregnant or breastfeeding</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="donation-form-section">
+            <h3>Register to Donate Blood</h3>
+            <form id="bloodDonationForm" class="donation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bloodType">Blood Type</label>
+                        <select id="bloodType" name="bloodType" required>
+                            <option value="">Select Blood Type</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="unknown">Don't Know</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="donationDate">Preferred Donation Date</label>
+                        <input type="date" id="donationDate" name="donationDate" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="donationTime">Preferred Donation Time</label>
+                    <select id="donationTime" name="donationTime" required>
+                        <option value="">Select Time Slot</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="eligibility" name="eligibility" required>
+                    <label for="eligibility">I confirm that I meet all eligibility requirements for blood donation</label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I consent to the use of my information for blood donation purposes</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Register to Donate</button>
+            </form>
+        </section>
+
+        <section class="blood-facts">
+            <h3>Did You Know?</h3>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <h4>Every 2 Seconds</h4>
+                    <p>Someone in the Country needs blood</p>
+                </div>
+                <div class="fact-card">
+                    <h4>1 Donation</h4>
+                    <p>Can save up to 3 lives</p>
+                </div>
+                <div class="fact-card">
+                    <h4>38%</h4>
+                    <p>Of the population is eligible to donate, but less than 10% do</p>
+                </div>
+                <div class="fact-card">
+                    <h4>1 Pint</h4>
+                    <p>The amount of blood collected during a donation (your body has 10-12 pints)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>123 Medical Drive, Health City</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: info@shrusht-hospital.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="blood-donation.html">Blood Donation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Emergency</h4>
+                <p>Emergency Number: (555) 987-6543</p>
+                <p>Available 24/7</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Shrusht Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
